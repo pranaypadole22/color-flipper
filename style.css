@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    padding: 20px;
+}
+  ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav-links{
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+}
+.navbar h4{
+    margin-bottom: 0;
+    color: rgb(43, 176, 209);
+    font-size: 20px;
+}
+.container{
+   text-align: center;
+}
+.container h2{
+    background: var(--clr-black);
+    color: var(--clr-white);
+    padding: 1rem;
+    border-radius: var(--radius);
+    margin-bottom: 2.5rem;
+}
+main {
+        min-height: calc(100vh - 3rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(color1 color1-stop-at, color2 color2-start-at);
+}
+.btn{
+    height: 50px;
+    width: 120px;
+    margin-top: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: var(--radius);
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+    border: 2px solid red;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.box{
+    height: 20px;
+    border: 2px solid red;
+}
+
+/* Basic styles for the navigation links */
+.nav-links a {
+    text-decoration: none; /* Removes the default underline */
+    color: inherit; /* Keeps the text color as is */
+    padding: 0 5px; /* Adds some padding for spacing */
+}
+
+/* Underline on click (active state) */
+.nav-links a:active {
+    text-decoration: underline; /* Adds underline when the link is clicked */
+}
+
+/* Underline on hover (optional) */
+.nav-links a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 10px; /* Reduces padding on smaller screens */
+    }
+    
+    .nav-links {
+        gap: 15px; /* Reduces gap between links on smaller screens */
+        font-size: 18px; /* Reduces font size on smaller screens */
+    }
+    
+    .btn {
+        width: 100px; /* Adjusts button size on smaller screens */
+        font-size: 0.9rem;
+    }
+}
